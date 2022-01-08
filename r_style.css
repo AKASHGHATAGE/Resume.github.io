@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+body{
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    max-width: 80vw;
+    max-height: 80vh;
+    position: relative;
+    left: 10vw;
+    top: 10vh;
+    background: linear-gradient(#e66465, #9198e5);
+    border-radius: 10px;
+
+    display: flex;
+    
+    
+}
+.left{
+    background-color: #f60950;
+    width: 100vw;
+    height: 100vw;
+    max-width: 50%;  
+    max-height: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    border-radius: 10px 50% 50%  10px; 
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 5px;
+}
+.self{
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+
+}
+.skils{
+    display: flex;
+    flex-wrap: wrap; 
+
+
+}
+.lng{
+    width:200px;
+    padding: 10px;
+    border:2px solid black;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.gauge,.gauge1,.gauge2,.gauge3,.gauge4,.gauge5{
+
+    width: 100%;
+    max-width: 250px;
+    color: #358675;
+    }
+    .gauge__body, .gauge__body1, .gauge__body2, .gauge__body3, .gauge__body4, .gauge__body5{
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        background-color:#b4c0be;
+        position: relative;
+        border-top-left-radius: 100% 200%;
+        border-top-right-radius: 100% 200%;
+        overflow: hidden; 
+    
+    }
+    .gauge_fill, .gauge_fill1, .gauge_fill2, .gauge_fill3, .gauge_fill4, .gauge_fill5{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: inherit;
+        height: 100%;
+        background-color: #009578;
+        transform-origin: center top;
+        transform: rotate(0.25turn);
+        transition:transfrom 0.2s ease-out;
+    
+    
+    
+    }
+    .gauge_cover, .gauge_cover1, .gauge_cover2, .gauge_cover3, .gauge_cover4, .gauge_cover5{
+        width: 75%;
+        height: 150%;
+        background-color: white;
+        border-radius: 50%;
+        position:absolute;
+        top: 25%;
+        left: 12.5%;
+        transform: translate(0px, 0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25%;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: 32px;
+    
+    
+    }
